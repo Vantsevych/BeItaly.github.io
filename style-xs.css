@@ -1,0 +1,613 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    /* font-size: 25px;
+    line-height: 32px;
+    font-weight: 300; */
+}
+
+.Top-bar {
+    width: 100%;
+    background-color: rgb(76, 77, 76);
+    color: antiquewhite;
+}
+
+.container {
+    max-width: 1220px;
+    padding: 11px 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+
+
+.container-menu {
+    position: sticky;
+}
+
+[class*="menu-"] {
+    float: left;
+    position: relative;
+    z-index: 500;
+}
+.top-menu {
+    z-index: 500;
+}
+.top-menu:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    position: relative;
+    width: 24%;
+    height: auto;
+    left: 38%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    z-index: 500;
+
+}
+
+.logo-icon {
+    max-height: 55px;
+    opacity: 1.5;
+}
+
+.menu-ul-left, .menu-ul-right {
+    position: absolute;
+    width: 38%;
+    text-align: center;
+    padding-top: 20px;
+    z-index: 500;
+    font-size: 20px;
+}
+.menu-ul-left {
+    left: 0;
+}
+.menu-ul-right{
+    right: 0;
+}
+
+[class*="menu-li"] {
+    width: 33%;
+    text-align: center;
+}
+.menu-li-a,.menu-li-menu-a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    line-height: 40px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.menu-li-menu-a {
+     position: relative;
+     z-index: 500;
+}
+
+.menu-menu-submenu {
+    display: none;
+    text-transform: uppercase;
+    position: relative;
+    text-align: left;
+    top: 0;
+    color: white;
+    left: 35px;
+    z-index: 500;
+}
+
+.menu-li-submenu > li {
+    z-index: 500;
+}
+.menu-menu-submenu > li:hover {
+    border-bottom: 1px solid white;
+}
+
+.menu-li-menu-a:hover {
+    border-bottom: 1px solid white;
+}
+.menu-li-left:hover .menu-menu-submenu{
+    display: block;
+}
+
+.menu-menu-submenu > li {
+    margin-top: 25px;
+}
+
+.menu-li-a:hover {
+    border-bottom: 1px solid white;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    text-align: center;
+    z-index: -1;
+}
+
+
+.slider-1 > img {
+    width: 100%;
+    height: 1100px;
+    opacity: 0.9;
+}
+.h1 {
+    width: 100%;
+    text-align: center;
+}
+.slider1-h1{
+    width: 60%;
+    font-family: "Cormorant Garamond";
+    color: rgb(253, 251, 251);
+    font-size: 190px;
+    font-weight: 300;
+    letter-spacing: 100px;
+    z-index: 500;
+    position: absolute;
+    top: 350px;
+    left: 20%;
+    text-transform: uppercase;
+}
+
+
+.welcome, .about-us, .menu, .pasta, .pizza {
+    background-color: #f6f6f6;
+    
+}
+.welcome-left {
+    float: left;
+    color: #fff;
+    padding: 120px 10%;
+    background-color: rgb(37, 36, 34);
+    margin-top: -60px;
+    width: 45%;
+    height: 676px;
+    z-index: 500;
+    position: relative;
+} 
+
+.welcome-left:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.welcome-left-h1 {
+    font-size: 48px;
+    line-height: 58px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    z-index: 500;
+}
+
+.welcome-left-text {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 300;
+    margin: 20px 0 25px 0;
+}
+
+.welcome-right {
+    display: inline-block;
+    width: 55%;
+    height: 676px;
+    margin-bottom: 60px;
+    background-color: rgb(129, 127, 127);
+}
+
+.about-us-title {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+
+.row-about-us {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-about-us > [class*="col-lg-"] {
+    padding: 0 15px;
+
+}
+
+.about-us-icon-1, .about-us-icon-2 , .about-us-icon-3 {
+    position: relative;
+    justify-content: center;
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+.about-us-img1, .about-us-img2, .about-us-img3 {
+    overflow: hidden;
+    max-width: 100%;
+    width: 372px;
+    height: 320px;
+    -padding-left: 20px;
+    margin-bottom: 15px;
+}
+.about-us-img1, .icon-1 {
+    margin-left: -15px;
+}
+.about-us-img3, .icon-3 {
+    margin-right: -15px;
+}
+.icon-2 {
+    margin-left: -6px;
+}
+
+.icon-1, .icon-2, .icon-3 {
+    display: block;
+    position: absolute;
+    width: 28%;
+    height: 320px;
+    top: 0;
+    left: 20px;
+    text-align: center;
+    background-color:#8b6f5c;
+    padding-top: 30%;
+}
+
+.text-about {
+    font-size: 32px;
+}
+
+
+.about-us-icon-1:hover > .icon-1, .about-us-icon-2:hover > .icon-2, .about-us-icon-3:hover > .icon-3 {
+    display: none;
+}
+
+
+.about-us-part2 {
+    padding: 0 8%;
+    margin: 180px 0 80px;
+}
+
+.about-us-part2 > h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.p-part2 {
+    margin: 0 0 15px;
+    line-height: 40px;
+    font-weight: 400;
+    font-size: 25px;
+    color: rgb(133, 132, 132);
+}
+
+.icon-part2 {
+    position: relative;
+    margin: 180px 0 80px;
+    padding-top: 20px;
+}
+
+.icon-part2 > img {
+    position: absolute;
+    top: 15%;
+    right: -230px;
+    width: 700px;
+    overflow: hidden;
+}
+
+
+.menu-trattoria {
+    width: 100%;
+    text-align: center;
+    font-size: 85px;
+    line-height: 80px;
+    font-weight: 400;
+    margin-bottom: 90px;
+}
+
+.starters{
+    max-width: 100%;
+    position: relative;
+}
+
+.starters-icon, .pasta-icon, .pizza-icon{
+    display: inline-block;
+    position: relative;
+    width: 25%;
+    float: left;
+}
+
+.pasta-icon, .pasta-menu {
+    float: right;
+}
+.pasta-icon:after, .pasta.menu:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.starters-icon:after, .pasta-icon:after, .pizza-icon:after, .pasta-menu:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.starters-icon > img, .pasta-icon > img, .pizza-icon > img {
+    width: 100%;
+    height: 600px;
+}
+
+.starters-menu, .pasta-menu, .pizza-menu {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    height: auto;
+    padding: 50px 105px 0;
+}
+
+.starters-menu-igm, .pasta-menu-img, .pizza-menu-img {
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.starters-menu-igm > img, .pasta-menu-img > img, .pizza-menu-img > img {
+    position: relative;
+    width: 125px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.starters-title, .pasta-title, .pizza-title {
+    font-size: 26px;
+    line-height: 35px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(165, 164, 164, 0.5);
+}
+
+.dish-name-starters {
+    position: relative;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dish-name-starters >span {
+    position: absolute;
+    right: 10px;
+    font-size: 27px;
+    line-height: 29px;
+    font-weight: 300;
+}
+
+.about-dish {
+    font-family: 'Poppins', sans-serif;
+    padding-right: 170px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(165, 164, 164, 0.5);
+    line-height: 40px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+}
+
+.pasta, .pizza {
+    margin-top: 100px;
+}
+
+.pizza {
+    margin-bottom: 100px;
+}
+
+.btn-menu {
+    text-align: center;
+}
+
+.btn-book-a-table {
+    border: none;
+    background-color: #8b6f5c;
+    padding: 11px 20px;
+    width: 320px;
+    height: 65px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+.main-title-page-of-story {
+    width: 100%;
+    height: 900px;
+    opacity: 0.9;
+    background-image: url(img/landscape-950-shot-green-hills-val-d-orcia-tuscany-italy-gloomy-sky.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.main-title-page-of-story > .title {
+    font-size: 95px;
+    line-height: 105px;
+    font-weight: 400;
+    opacity: 1;
+} 
+
+.story-of-tuskany-traditions {
+    width: 100%;
+    position: relative;
+    padding-top: 120px;
+    background-color: #f6f6f6;
+}
+
+.rest-spices {
+    position: relative;
+    top: -300px;
+    width: 20%;
+    float: left;
+}
+
+.rest-mozarella {
+    width: 33%;
+    float: right;
+}
+
+.tuskany-traditions {
+    width: 47%;
+    float: left;
+    padding: 0 135px;
+    text-align: left;
+}
+
+.story-of-tuskany-traditions:after, .rest-spices:after, .rest-mozarella:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.tuskany-traditions > h1 {
+    font-size: 70px;
+    line-height: 80px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 70px;
+}
+
+.tuskany-traditions > p {
+    font-family: 'Poppins', sans-serif;
+    color: #5e5e5e;
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.tuskany-traditions > p > strong {
+    font-weight: 700;
+    color: #585656;
+}
+
+.tuskany-traditions-part1 {
+    margin-bottom: 40px;
+}
+
+.contact {
+    padding-top: 120px;
+    padding-bottom: 75px;
+    background-color: #2d2b2a;
+    background-image: url(https://themes.muffingroup.com/be/restaurant6/wp-content/uploads/2020/04/rest6-bottom-sec-gra.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 200px;
+    color: #fff;
+}
+
+.footer-h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 105px;
+    line-height: 110px;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: #fff;
+    margin-bottom: 90px;
+}
+
+.connect {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    float: left;
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    margin-right: 8px;
+}
+.box:after, .connect:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.facebook, .instagram, .twitter, .vk {
+    position: relative;
+    -display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facebook-hide, .instagram-hide, .twitter-hide, .vk-hide{
+    position: absolute;
+    -display: none;
+    justify-content: center;
+    align-items: center; 
+    z-index: 10;
+}
+
+.facebook:hover  .facebook-hide{
+    display: block;
+}
+
+.facebook-hide {
+    background-color: blue;
+}
+
+.instagram-hide {
+    background-color: rgb(224, 18, 97);
+}
+
+.twitter-hide {
+    background-color: rgb(29, 229, 243);
+}
+
+.vk-hide {
+    background-color: rgb(249, 249, 250);
+}
+
+
+
+
+.row-footer {
+    display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
